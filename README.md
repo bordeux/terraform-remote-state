@@ -28,5 +28,5 @@ const state = await s3RemoteState("staging", {
     profile: 'terraform-state'
 });
 
-const vpcId= state.getOutput("vpc_id");
+const restApiId = state.getOutput("restapi_id");
 ```
