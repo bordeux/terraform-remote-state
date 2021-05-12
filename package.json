@@ -1,10 +1,10 @@
 {
   "name": "terraform-remote-state",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Fetch remote terraform state from S3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "tsc",
     "eslint": "eslint 'src/**/*.ts' 'index.ts'",
