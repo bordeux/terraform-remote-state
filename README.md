@@ -19,9 +19,9 @@ or `yarn`:
 The following program will read a Terraform state file stored in S3 from staging workspace:
 
 ```typescript
-import { s3RemoteState } from "terraform-remote-state";
+const tf = require('terraform-remote-state')
 
-const state = await s3RemoteState("staging", {
+const state = await tf.s3RemoteState("staging", {
     bucket: "pulumi-terraform-state-test",
     key: "test/terraform.tfstate",
     region: "us-west-2",
