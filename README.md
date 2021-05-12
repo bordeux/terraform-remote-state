@@ -8,18 +8,18 @@ Micro library to fetch terraform state (right now only from S3 bucket)
 
 To use from JavaScript or TypeScript in Node.js, install using either `npm`:
 
-    $ npm install @bordeux/terraform-remote-state
+    $ npm install terraform-remote-state
 
 or `yarn`:
 
-    $ yarn add @bordeux/terraform-remote-state
+    $ yarn add terraform-remote-state
 
 ## Examples
 
 The following program will read a Terraform state file stored in S3 from staging workspace:
 
 ```typescript
-import { s3RemoteState } from "@bordeux/terraform-remote-state";
+import { s3RemoteState } from "terraform-remote-state";
 
 const state = await s3RemoteState("staging", {
     bucket: "pulumi-terraform-state-test",
